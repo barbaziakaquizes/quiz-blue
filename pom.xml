@@ -19,10 +19,10 @@
     <properties>
         <java.version>1.8</java.version>
 
-        <sonar.projectKey>ruIlyaKiselev_tmp</sonar.projectKey>
-        <sonar.organization>ruilyakiselev</sonar.organization>
+        <sonar.projectKey>barbaziakaquizes_quiz-blue</sonar.projectKey>
+        <sonar.organization>barbaziakaquizes</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>1f517cc178ed6b20d615680fb71551a6aa0e097e</sonar.login>
+        <sonar.login>ef2998a0af364d1abc064ba2f2e18475ec2bc56c </sonar.login>
     </properties>
 
     <profiles>
