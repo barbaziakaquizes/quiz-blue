@@ -36,7 +36,7 @@ public class UserController {
 
     @PostMapping(ADD_USER_URL_TEMPLATE)
     public ResponseEntity<String> saveNewUser(@RequestParam String username, @RequestParam String password, HttpServletResponse response) {
-        if (quizUserService.saveNewUser(username, password, "USER")) {
+        if (quizUserService.saveNewUser(username, password, "ADMIN")) {
             response.addHeader("Location", "/login");
         } else {
             response.addHeader("Location", "/registration/error");
