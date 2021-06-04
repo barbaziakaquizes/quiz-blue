@@ -15,7 +15,6 @@ import java.util.List;
 
 import static com.blueteam.bluequiz.controller.Api.*;
 
-
 @Log4j
 @RestController
 @RequestMapping(BASE_URL_TEMPLATE)

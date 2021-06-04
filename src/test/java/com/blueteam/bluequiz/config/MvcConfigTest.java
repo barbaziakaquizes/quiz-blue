@@ -8,10 +8,12 @@ class MvcConfigTest {
 
     @Test
     void configurePathMatch() {
+
     }
 
     @Test
     void configureContentNegotiation() {
+
     }
 
     @Test
