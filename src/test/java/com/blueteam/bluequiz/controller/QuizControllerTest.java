@@ -13,7 +13,7 @@ import static com.jayway.restassured.RestAssured.given;
 class QuizControllerTest extends ApplicationTests {
 
     //TODO: Broken test, fix after integration with DB
-    @Disabled
+//    @Disabled
     @Test
     public void getFirstQuizById() {
 
@@ -29,7 +29,7 @@ class QuizControllerTest extends ApplicationTests {
     }
 
     //TODO: Broken test, fix after integration with DB
-    @Disabled
+//    @Disabled
     @Test
     public void getSecondQuizById() {
 
@@ -45,4 +45,15 @@ class QuizControllerTest extends ApplicationTests {
 
     }
 
+    @Test
+    void add() {
+    }
+
+    @Test
+    void update() {
+    }
+
+    @Test
+    void delete() {
+    }
 }

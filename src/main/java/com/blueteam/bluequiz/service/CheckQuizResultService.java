@@ -53,7 +53,7 @@ public class CheckQuizResultService {
         return saveQuizResultService.saveQuizResult(quiz, calculateResults, emailAddress);
     }
 
-    private int calculateUsersRightAnswers(UserAnswersContainer userAnswersContainer, List<Question> questions) {
+    public int calculateUsersRightAnswers(UserAnswersContainer userAnswersContainer, List<Question> questions) {
         int correctAnswers = 0;
 
 
@@ -68,7 +68,7 @@ public class CheckQuizResultService {
         return correctAnswers;
     }
 
-    private double calculateResults(int questionsInQuizQuantity, int usersCorrectAnswersQuantity) {
+    public double calculateResults(int questionsInQuizQuantity, int usersCorrectAnswersQuantity) {
         double result = (double) usersCorrectAnswersQuantity / questionsInQuizQuantity;
         double roundedResult = BigDecimal.valueOf(result)
                 .setScale(2, RoundingMode.FLOOR).doubleValue();

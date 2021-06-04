@@ -1,4 +1,4 @@
-package com.blueteam.bluequiz.security;
+package com.blueteam.bluequiz.config;
 
 import com.blueteam.bluequiz.service.UserService;
 import org.springframework.context.annotation.Configuration;

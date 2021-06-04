@@ -26,7 +26,6 @@ public class UserAnswersControllerTest extends ApplicationTests {
     @Autowired
     StatisticRepository statisticRepository;
 
-
     @BeforeEach
     void setup() {
         addTestQuizData();
