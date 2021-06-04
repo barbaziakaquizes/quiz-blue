@@ -8,5 +8,6 @@ class AppConfigTest {
 
     @Test
     void corsFilter() {
+
     }
 }

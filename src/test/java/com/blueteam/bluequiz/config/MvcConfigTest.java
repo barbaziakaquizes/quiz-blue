@@ -1,10 +1,16 @@
 package com.blueteam.bluequiz.config;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.context.support.StaticApplicationContext;
+import org.springframework.web.servlet.mvc.ParameterizableViewController;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class MvcConfigTest {
+
+    private ViewControllerRegistry registry = new ViewControllerRegistry(new StaticApplicationContext());;
 
     @Test
     void configurePathMatch() {
@@ -40,6 +46,11 @@ class MvcConfigTest {
 
     @Test
     void addViewControllers() {
+        this.registry.addViewController("/login").setViewName("login");
+        ParameterizableViewController controller = new ParameterizableViewController();
+        controller.setViewName("login");
+       // ParameterizableViewController controller = getController("/login");
+        assertEquals("login", controller.getViewName());
     }
 
     @Test
