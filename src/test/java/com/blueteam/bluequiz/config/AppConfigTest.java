@@ -25,8 +25,6 @@ class AppConfigTest {
     @Test
     void corsFilter() {
 
-<<<<<<< HEAD
-=======
         MvcResult result = mvc
                 .perform(get("/users/all"))
                 .andExpect(status().isOk())
@@ -47,6 +45,5 @@ class AppConfigTest {
         assertThat(responseHeaders).isNotNull();
         assertThat(1).isEqualTo(1);
         assertThat(responseHeaders.size()).isBetween(5, 15);
->>>>>>> origin/master
     }
 }
