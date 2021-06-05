@@ -21,20 +21,27 @@ const adminRouting = (
     <React.Fragment>
         <Router>
             <div>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/admin">Quiz manager</Link>
-                    </li>
-                    <li>
-                        <Link to="/admin/statistic">Statistic</Link>
-                    </li>
-                    <li>
-                        <Link to="/user/home">User page</Link>
-                    </li>
-                </ul>
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div className="container-fluid">
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="d-flex justify-content-between navbar-nav">
+                                <li className="nav-item">
+                                    <a className="nav-link active fs-1" aria-current="page" href="/">Home</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active fs-1" href="/admin">Quiz manager</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active fs-1" href="/admin/statistic">Statistic</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active fs-1" href="/user/home" tabIndex="-1"
+                                       aria-disabled="true">User page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
                 <Switch>
                     <Route exact path="/" component={Welcome} />
                     <Route exact path="/admin" component={AdminHomePage} />
