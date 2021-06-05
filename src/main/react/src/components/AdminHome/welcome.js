@@ -5,7 +5,7 @@ class Welcome extends Component {
         return (
             <div
                 id='hello' className="h2 text-center">
-                <p>Hello we are team blue/barbaziaka. Education project for quizes</p>
+                <p>Hello we are team Barbaziaka. Education project for quizes</p>
             </div>
         );
     }
