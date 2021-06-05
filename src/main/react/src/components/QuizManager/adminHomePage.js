@@ -53,9 +53,9 @@ class AdminHomePage extends React.Component {
                                         pathname: '/admin/quiz-editor',
                                         state: {quiz}
                                     }}>
-                                        <div className="btn btn-primary mr-2">Open</div>
+                                        <div className="btn btn-dark mr-2">Open</div>
                                     </Link>
-                                    <div className="btn btn-danger" onClick={() => this.doServerDeleteQuizRequest(quiz)}>Delete</div>
+                                    <div className="btn btn-dark" onClick={() => this.doServerDeleteQuizRequest(quiz)}>Delete</div>
                                 </div>
                                 </div>
                             </li>

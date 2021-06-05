@@ -49,7 +49,7 @@ class QuestionEditor extends React.Component {
                         </div>
                         {
                             Object.keys(this.state.questionAnswers).length > 2
-                                ?  <div className="btn btn-danger" onClick={this.deleteAnswer(answer)}>Delete</div>
+                                ?  <div className="btn btn-dark" onClick={this.deleteAnswer(answer)}>Delete</div>
                                 : false
                         }
                     </div>
@@ -57,8 +57,8 @@ class QuestionEditor extends React.Component {
                 </div>;
             })}
             <div className="d-flex justify-content-between mt-3 mb-2">
-                <div className="btn btn-primary" onClick={this.addNewAnswer}>Add answer</div>
-                <div className="btn btn-primary" onClick={() => this.props.callback(this.state)}>Save question</div>
+                <div className="btn btn-dark" onClick={this.addNewAnswer}>Add answer</div>
+                <div className="btn btn-dark" onClick={() => this.props.callback(this.state)}>Save question</div>
             </div>
         </div>
     }
